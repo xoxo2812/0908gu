@@ -1,0 +1,579 @@
+*{
+    font-family: 'Noto Sans KR';
+}
+
+
+.f24{
+    font-size: 24px;
+}
+.f20{
+    font-size: 20px;
+}
+.f18{
+    font-size: 18px;
+}
+.f15{
+    font-size: 15px;
+}
+.allmenushow{
+    overflow: hidden;
+}
+
+.fa + .sound_only{
+    font-size: 1rem;
+    line-height: 1;
+    position: unset !important;
+    width:auto;
+    height:auto;
+
+}
+
+
+#nachaelim a{
+    color:#222;
+}
+
+#gnb .gnb_1da{
+    line-height: 1.4;
+    letter-spacing: -0.05rem;
+    font-size: 1.8rem;
+    color: #1D1D1F;
+    font-weight: 500;
+    font-family: 'Noto Sans KR';
+    padding: 0px 25px;
+}
+
+#gnb #gnb_1dul{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    position: relative;
+   
+}
+.gnb_2dul{
+    top:100%;
+    min-width: 19.5rem;
+    border-radius: 1rem;
+    box-shadow: 0.2rem 0.4rem 1rem rgba(0, 0, 0, 0.16);
+    left: -2.5rem;
+    bottom: 0;
+    transform: translateY(100%);
+    transition: 0.5s;
+}
+
+#gnb .gnb_2da{
+    margin-top: 0;
+    color: #1D1D1F;
+    margin-bottom: 1.3rem;
+    font-family: 'Noto Sans KR';
+    font-weight: 400;
+}
+
+#gnb .gnb_1dli:hover .gnb_2dul{
+    display: block !important;
+    transform: translateY(0);
+    left: -2.5rem;
+    
+}
+#gnb .gnb_2dul_box{
+    font-size: 1.4rem;
+    background: #fff;   
+    padding: 2.5rem 4rem;
+    white-space: nowrap;
+}
+#gnb_all{ 
+   
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #FF8908;
+    color: #fff; 
+    overflow: hidden;   
+    z-index: 150000;
+}
+#gnb_all[style*="display: block"],
+#gnb_all[style*="display: flex"]
+{
+    display: flex !important; 
+    flex-direction: column;   
+    align-items: center;
+    justify-content: center;
+    height: 100% !important;
+
+}
+#gnb_all .gnb_al_li {
+    display: flex; 
+    align-items: center;
+    border-bottom: 1px solid #FFB86B;
+    padding: 2.4rem 0;
+}
+#gnb_all .gnb_al_li ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#gnb .gnb_1da a:before {
+    content: "";
+    width: 100%;
+    height: 2px;
+    background: #FF8908;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -1rem;
+    opacity: 0;
+    transition: 0.25s;
+}
+
+.menu_lefts{
+    width: 35rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Noto Sans KR';
+}
+
+.logos img {
+    max-width: 89%;
+    border: 0 none;
+}
+
+.logos p{
+    font-size: 2.4rem;
+    letter-spacing: -0.16rem;
+    vertical-align: middle;
+}
+
+#gnb .gnb_al_a {
+    font-size: 33px;
+    font-weight: 500;
+    color: #fff;
+    text-decoration: none;
+    min-width: 153px;
+}
+
+#gnb_all .gnb_al_li li a:hover{
+    color: #fff;
+}
+
+.texts {
+    font-size: 20px;
+    margin-bottom: 353px;
+}
+.hd-banner {
+    display: block;
+    height: 5.4rem;
+    position: relative;
+    background: #FFEBD6;
+    transition: 0.3s;
+}
+
+.hd-banner-layout{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 0 5rem;
+    padding-right: 12rem;
+    position: relative;
+}
+
+.hd-banner-item{
+    font-size: 1.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+.hd-banner-item a{
+    margin-left: 4rem;
+}
+
+.txt{
+    color: #3939C1;
+}
+
+#section1{
+    padding: 5rem 0 15rem;
+    position: relative;
+    display: block;
+}
+
+#section1:before {
+    content: "";
+    width: 9.3rem;
+    height: 6.5rem;
+    background: url(https://www.jirandata.co.kr/html/images/main/scroll_down.svg) no-repeat center center/contain;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 5rem;
+}
+
+#section1:after {
+    content: "";
+    width: 0.5rem;
+    height: 1.7rem;
+    background: url(/html/images/main/scroll_down_arrow.svg) no-repeat center center/contain;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 4.4rem;
+    animation: scrollAni 1.5s ease-out infinite;
+}
+
+#section1 div .active {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.layout {
+    width: 128rem;
+    max-width: 100%;
+    position: relative;
+    margin: 0 auto;
+}
+
+#section1 .visleft {
+    width: calc(100% - 55.5rem);
+    padding-right: 2.4rem;
+}
+
+#section1 .vistxt{
+    min-height: 27.5rem;
+}
+
+#section1 .vistxt p {
+    font-size: 2.6rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+#section1 .vistxt h2{
+    font-weight: 600;
+    font-size: 8rem;
+    letter-spacing: -0.6rem;
+    line-height: 1.1;
+    white-space: nowrap;
+}
+
+.ftly{
+    width: 173rem;
+    max-width: 100%;
+    position: relative;
+    margin: 0 auto;
+}
+
+.ftop{
+    padding: 1rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    color: #FFF3E6;
+    list-style: none;
+    background: #FF8908;
+}
+
+.ft1 {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    font-family: "Noto Sans KR";
+    padding-left: 34rem;
+}
+
+.ft1 li{
+    padding: 1rem 1.6rem;
+    font-size: 20px;
+}
+
+.ft1 i {
+    font-size: 20px;
+}
+
+.fb1 {
+    display: flex;
+}
+
+.li1 {
+    padding-top: 4rem;
+}
+
+.li1 span {
+    font-weight: 400;
+    font-family: "Noto Sans KR";
+    font-size: 1.3rem;
+}
+
+.li2 {
+    padding-left: 1rem;
+}
+
+.li2 span {
+    font-weight: 400;
+    font-family: "Noto Sans KR";
+    font-size: 1.3rem;
+}
+
+.fbt *{
+    font-size: 1.3rem;
+}
+
+.foot-bottom-right-logo li{
+    width: 5rem;
+    padding-right: 1.5rem;
+}
+
+.orange {
+    color: #FF8908;
+    font-weight: bold;
+}
+
+.oranges {
+    color: #FF8908 !important;
+}
+
+.logos ul li span {
+    font-weight: bolder;
+}
+
+.logos address {
+    margin-top: 1.6rem;
+}
+
+.copy {
+    font-size: 1.4rem !important;
+    color: #aaa;
+    margin-top: 2rem;
+    font-weight: 300;
+}
+
+.ft1 li a {
+    color: #fff !important;
+}
+
+.rollingDiv .swiper{
+    overflow: inherit;
+
+}
+
+.sw1 {
+    border-radius: 25px;
+    padding: 30px 0;
+}
+
+.twoBannerwrap li > a{
+    font-size: 2rem;
+    border-radius: 25px;
+}
+
+.twoBannerwrap li a {
+    text-decoration-line: none;
+}
+
+.banimg {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    padding-left: 3rem;
+}
+
+.bantxt {
+    color: #555;
+    font-size: 14px;
+}
+
+.view {
+    box-sizing: border-box;
+    width: 17.6rem;
+    padding: 1.3rem 3.2rem;
+    background: #fff;
+    border-radius: 2.6rem;
+    display: flex;
+    align-items: center;
+    font-size: 1.6rem;
+    justify-content: space-between;
+    margin-top: 2.4rem;
+    transition: 0.25s;
+}
+
+.imgs div {
+    height: 8.3rem;
+    background: #fff;
+    border-radius: 2rem;
+    box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.13);
+}
+
+.swiper-button-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 5.2rem;
+    height: 5.2rem;
+    background: #8D8D8E;
+    border-radius: 50%;
+    color: #fff;
+    text-align: center;
+    transition: 0.3s;
+    z-index: 5;
+    
+}
+.swiper-button-next:after{
+    display: none;
+}
+
+.swiper-button-prev {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 5.2rem;
+    height: 5.2rem;
+    background: #8D8D8E;
+    border-radius: 50%;
+    color: #fff;
+    text-align: center;
+    transition: 0.3s;
+    z-index: 5;
+}
+
+.swiper-button-prev:after {
+    display:none;
+}
+
+.call a {
+    display: block;
+    font-size: 5.8rem;
+    color: #FF8908 !important;
+    font-family: "Montserrat";
+    font-weight: 700;
+    text-decoration-line: none;
+}
+
+.call ul li a{
+    text-decoration-line: none;
+}
+
+.ft2 {
+    display: flex;
+}
+
+.sns {
+    display: flex;
+    align-items: center;
+}
+
+.fam {
+    width: 17.5rem;
+    margin-left: 3rem;
+    position: relative;
+}
+
+.fambtn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    color: #fff;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #fff;
+}
+
+.fam ul > li a:active {
+    display: block;
+    padding: 0.8rem 1rem;
+    font-size: 1.6rem;
+    border-bottom: 1px dashed #ddd;
+    transition: 0.25s;
+}
+
+.txt2 li > a {
+    padding: 3rem;
+    padding-left: 0;
+    display: flex;
+    border-bottom: 1px solid #E9E9E9;
+}
+
+.btns {
+    position: absolute;
+    top: 11rem;
+}
+
+.btns1 {
+    box-sizing: border-box;
+    width: 17.6rem;
+    padding: 1.3rem 3.2rem;
+    background: #F5F5F7;
+    border-radius: 2.6rem;
+    display: flex;
+    align-items: center;
+    font-size: 1.6rem;
+    justify-content: space-between;
+    margin-top: 2.4rem;
+    transition: 0.25s;
+}
+
+.btns1:hover {
+    background: #FF8908;
+    color: #fff !important;
+}
+
+.tts h2{
+    color: #FF8908;
+    font-size: 2.8rem;
+    font-weight: 600;
+}
+
+.tts p{
+    font-size: 2.8rem;
+    font-weight: 500;
+}
+
+.txt2 p {
+    color: #707070;
+}
+
+.txt2 a {
+    text-decoration-line: none;
+    font-size: 1.45rem;
+}
+
+.txt2 a :hover {
+    color: #FF8908;
+}
+
+.txt2 strong{
+    font-weight: 600;
+}
+
+.videos {
+    width: 64rem;
+    margin-right: -8.5rem;
+}
+
+.visleftbanner {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -1rem;
+    width: calc(100% + 2rem);
+    margin-top: 7rem;
+}
+
+.vis{
+    display: flex;
+    align-items: center;
+}
+
+.visleftbanner li a {
+    display: block;
+    background-color: #F8F9FA;
+    border-radius: 2rem;
+    padding: 2.3rem 3.2rem;
+    padding-right: 10rem;
+    height: 100%;
+    position: relative;
+    max-width: 40rem;
+}
+
